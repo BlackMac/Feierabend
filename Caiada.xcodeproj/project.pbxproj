@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F84211791AF96D2D0018F120 /* ArrivalTimePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84211741AF96D2D0018F120 /* ArrivalTimePickerViewController.m */; };
+		F842117A1AF96D2D0018F120 /* SLHArrivalTimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F84211761AF96D2D0018F120 /* SLHArrivalTimeManager.m */; };
+		F842117B1AF96D2D0018F120 /* SLHCaiadaView.m in Sources */ = {isa = PBXBuildFile; fileRef = F84211781AF96D2D0018F120 /* SLHCaiadaView.m */; };
+		F842117D1AF96D4F0018F120 /* horn.wav in Resources */ = {isa = PBXBuildFile; fileRef = F842117C1AF96D4F0018F120 /* horn.wav */; };
+		F842117F1AF96D630018F120 /* arrive.png in Resources */ = {isa = PBXBuildFile; fileRef = F842117E1AF96D630018F120 /* arrive.png */; };
 		F8B843601AF3A92A0006CCB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B8435F1AF3A92A0006CCB8 /* main.m */; };
 		F8B843631AF3A92A0006CCB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B843621AF3A92A0006CCB8 /* AppDelegate.m */; };
 		F8B843661AF3A92A0006CCB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B843651AF3A92A0006CCB8 /* ViewController.m */; };
@@ -27,7 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F8B8435A1AF3A92A0006CCB8 /* Caiada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caiada.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84211731AF96D2D0018F120 /* ArrivalTimePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrivalTimePickerViewController.h; sourceTree = "<group>"; };
+		F84211741AF96D2D0018F120 /* ArrivalTimePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrivalTimePickerViewController.m; sourceTree = "<group>"; };
+		F84211751AF96D2D0018F120 /* SLHArrivalTimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLHArrivalTimeManager.h; sourceTree = "<group>"; };
+		F84211761AF96D2D0018F120 /* SLHArrivalTimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLHArrivalTimeManager.m; sourceTree = "<group>"; };
+		F84211771AF96D2D0018F120 /* SLHCaiadaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLHCaiadaView.h; sourceTree = "<group>"; };
+		F84211781AF96D2D0018F120 /* SLHCaiadaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLHCaiadaView.m; sourceTree = "<group>"; };
+		F842117C1AF96D4F0018F120 /* horn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = horn.wav; sourceTree = "<group>"; };
+		F842117E1AF96D630018F120 /* arrive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrive.png; sourceTree = "<group>"; };
+		F8B8435A1AF3A92A0006CCB8 /* Feierabend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feierabend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B8435E1AF3A92A0006CCB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8B8435F1AF3A92A0006CCB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8B843611AF3A92A0006CCB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,7 +85,7 @@
 		F8B8435B1AF3A92A0006CCB8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F8B8435A1AF3A92A0006CCB8 /* Caiada.app */,
+				F8B8435A1AF3A92A0006CCB8 /* Feierabend.app */,
 				F8B843731AF3A92A0006CCB8 /* CaiadaTests.xctest */,
 			);
 			name = Products;
@@ -81,6 +94,12 @@
 		F8B8435C1AF3A92A0006CCB8 /* Caiada */ = {
 			isa = PBXGroup;
 			children = (
+				F84211731AF96D2D0018F120 /* ArrivalTimePickerViewController.h */,
+				F84211741AF96D2D0018F120 /* ArrivalTimePickerViewController.m */,
+				F84211751AF96D2D0018F120 /* SLHArrivalTimeManager.h */,
+				F84211761AF96D2D0018F120 /* SLHArrivalTimeManager.m */,
+				F84211771AF96D2D0018F120 /* SLHCaiadaView.h */,
+				F84211781AF96D2D0018F120 /* SLHCaiadaView.m */,
 				F8B843611AF3A92A0006CCB8 /* AppDelegate.h */,
 				F8B843621AF3A92A0006CCB8 /* AppDelegate.m */,
 				F8B843641AF3A92A0006CCB8 /* ViewController.h */,
@@ -96,6 +115,8 @@
 		F8B8435D1AF3A92A0006CCB8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F842117E1AF96D630018F120 /* arrive.png */,
+				F842117C1AF96D4F0018F120 /* horn.wav */,
 				F8B8435E1AF3A92A0006CCB8 /* Info.plist */,
 				F8B8435F1AF3A92A0006CCB8 /* main.m */,
 			);
@@ -136,7 +157,7 @@
 			);
 			name = Caiada;
 			productName = Caiada;
-			productReference = F8B8435A1AF3A92A0006CCB8 /* Caiada.app */;
+			productReference = F8B8435A1AF3A92A0006CCB8 /* Feierabend.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F8B843721AF3A92A0006CCB8 /* CaiadaTests */ = {
@@ -200,8 +221,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8B843691AF3A92A0006CCB8 /* Main.storyboard in Resources */,
+				F842117F1AF96D630018F120 /* arrive.png in Resources */,
 				F8B8436E1AF3A92A0006CCB8 /* LaunchScreen.xib in Resources */,
 				F8B8436B1AF3A92A0006CCB8 /* Images.xcassets in Resources */,
+				F842117D1AF96D4F0018F120 /* horn.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8B843661AF3A92A0006CCB8 /* ViewController.m in Sources */,
+				F842117A1AF96D2D0018F120 /* SLHArrivalTimeManager.m in Sources */,
 				F8B843631AF3A92A0006CCB8 /* AppDelegate.m in Sources */,
 				F8B843601AF3A92A0006CCB8 /* main.m in Sources */,
+				F84211791AF96D2D0018F120 /* ArrivalTimePickerViewController.m in Sources */,
+				F842117B1AF96D2D0018F120 /* SLHCaiadaView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Caiada/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Feierabend;
 			};
 			name = Debug;
 		};
@@ -359,7 +385,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Caiada/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Feierabend;
 			};
 			name = Release;
 		};
@@ -416,6 +442,7 @@
 				F8B8437F1AF3A92A0006CCB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F8B843801AF3A92A0006CCB8 /* Build configuration list for PBXNativeTarget "CaiadaTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +451,7 @@
 				F8B843821AF3A92A0006CCB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
