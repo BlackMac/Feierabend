@@ -16,7 +16,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    BOOL reset = YES;
+    NSDate *arrival = (NSDate *)[[NSUserDefaults standardUserDefaults] valueForKey:@"Arrival"];
+    if (arrival) {
+        reset = NO;
+        if ([arrival timeIntervalSinceNow] > 39600) {
+            reset = YES;
+        }
+    }
+    
+    if (reset) {
+        [[NSUserDefaults standardUserDefaults] setObject:[[NSDate alloc] init] forKey:@"Arrival"];
+    }
     return YES;
 }
 
