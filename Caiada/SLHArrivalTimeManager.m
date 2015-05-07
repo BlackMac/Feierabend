@@ -11,6 +11,7 @@
 
 @interface SLHArrivalTimeManager ()
 @property (nonatomic) UILocalNotification *timeUpLocalNotification;
+@property BOOL supressUpdateNotification;
 // etc.
 @end
 
@@ -28,6 +29,7 @@
 
 -(void)setupPreferences {
     BOOL reset = YES;
+    self.supressUpdateNotification = YES;
     NSDate *arrival = (NSDate *)[[NSUserDefaults standardUserDefaults] valueForKey:@"Arrival"];
     if (arrival) {
         reset = NO;
@@ -46,6 +48,8 @@
         required = 480.0*60.0;
     }
     self.requiredWorkingTime = required;
+    self.supressUpdateNotification = NO;
+    [self updated];
 }
 
 -(id)init {
@@ -66,10 +70,18 @@
     return self;
 }
 
+-(void)updated {
+    if (self.supressUpdateNotification) return;
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"SLHArrivalTimeUpdatedNotification" object:self];
+}
+
 -(void)setArrivalDate:(NSDate *)date {
-    _arrivalDate = date;
-    [[NSUserDefaults standardUserDefaults] setObject:date forKey:@"Arrival"];
-    [self scheduleNotification];
+    if (![_arrivalDate isEqualToDate:date]) {
+        _arrivalDate = date;
+        [[NSUserDefaults standardUserDefaults] setObject:date forKey:@"Arrival"];
+        [self scheduleNotification];
+        [self updated];
+    }
 }
 
 -(NSDate *)leaveDate {
@@ -100,8 +112,11 @@
 }
 
 -(void)setRequiredWorkingTime:(NSTimeInterval)requiredWorkingTime {
-    [[NSUserDefaults standardUserDefaults] setDouble:requiredWorkingTime  forKey:@"SchduledTime"];
-    _requiredWorkingTime = requiredWorkingTime;
-    [self scheduleNotification];
+    if (_requiredWorkingTime != requiredWorkingTime) {
+        [[NSUserDefaults standardUserDefaults] setDouble:requiredWorkingTime  forKey:@"SchduledTime"];
+        _requiredWorkingTime = requiredWorkingTime;
+        [self scheduleNotification];
+        [self updated];
+    }
 }
 @end

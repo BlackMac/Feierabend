@@ -22,12 +22,21 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Wenn Sie die Ortung erlauben erkennt Feierabend automatisch, zu welcher Uhrzeit Sie Ihren Arbeitsplatz erreicht haben.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Wenn Sie die Ortung erlauben kann Feierabend die Wettervorhersage aktivieren.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
+		<string>location-services</string>
 		<string>armv7</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>

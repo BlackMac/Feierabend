@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "SLHArrivalTimeManager.h"
+#import "SLHLocationManager.h"
+#import "CZWeatherKit.h"
 
 @interface ViewController ()
 
@@ -24,9 +26,43 @@
                           userInfo:nil
                            repeats:YES];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(timeManagerUpdated:)
+                                                 name:SLHArrivalTimeUpdatedNotification
+                                               object:nil];
+    
+    [self updateWeatherData];
     [super viewDidLoad];
 }
 
+-(void)timeManagerUpdated:(id)object {
+    [self updateTimeData];
+    [self updateWeatherData];
+}
+
+-(void)updateWeatherData {
+    if ([SLHLocationManager sharedLocationManager].available) {
+        NSLog(@"WeatherData");
+        CZWeatherRequest *request = [CZWeatherRequest requestWithType:CZForecastRequestType];
+        request.location = [CZWeatherLocation locationWithCLLocation:[SLHLocationManager sharedLocationManager].location];
+        request.service = [[CZForecastioService alloc] initWithKey:@"ffe70d26224e27f7cdac0f21af9a0ef0"];
+        [request performRequestWithHandler:^(id data, NSError *error) {
+            if (data) {
+                NSArray *forecasts = (NSArray *)data;
+                for (CZWeatherCondition *condition in forecasts) {
+                    if ([condition.date timeIntervalSinceDate:[SLHArrivalTimeManager sharedArrivalTimeManager].leaveDate] >0.0) {
+                        NSLog(@"%@: %f", condition.date, condition.temperature.c);
+                        self.weatherConditionDisplay.text = [NSString stringWithFormat:@"%c", condition.climaconCharacter];
+                        self.temperatureDisplay.text = [NSString stringWithFormat:@"%.0f℃", condition.temperature.c];
+                        break;
+                    }
+                }
+                
+                // Do whatever you like with the data here
+            }
+        }];
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

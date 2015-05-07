@@ -7,27 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#import "SLHLocationManager.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) SLHLocationManager *locationManager;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    BOOL reset = YES;
-    NSDate *arrival = (NSDate *)[[NSUserDefaults standardUserDefaults] valueForKey:@"Arrival"];
-    if (arrival) {
-        reset = NO;
-        if ([arrival timeIntervalSinceNow] > 39600) {
-            reset = YES;
-        }
-    }
-    
-    if (reset) {
-        [[NSUserDefaults standardUserDefaults] setObject:[[NSDate alloc] init] forKey:@"Arrival"];
-    }
     return YES;
 }
 

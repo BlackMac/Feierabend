@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define SLHArrivalTimeUpdatedNotification @"SLHArrivalTimeUpdatedNotification"
+
 @interface SLHArrivalTimeManager : NSObject
 
 @property (nonatomic, retain) NSDate *arrivalDate;

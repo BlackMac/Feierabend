@@ -40,6 +40,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)closeWithoutChanges:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+}
 
 - (IBAction)pickArrivalTimeNow:(id)sender {
     [SLHArrivalTimeManager sharedArrivalTimeManager].arrivalDate = [[NSDate alloc] init];
