@@ -12,7 +12,9 @@
 @interface SLHLocationManager : NSObject <CLLocationManagerDelegate>
 @property (nonatomic) CLLocation *location;
 @property (nonatomic) BOOL available;
+@property (nonatomic) NSString *address;
 + (SLHLocationManager *)sharedLocationManager;
+
 -(void)updateLocation;
 @end
 

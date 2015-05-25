@@ -21,7 +21,6 @@
         sharedInstance = [[SLHLocationManager alloc] init];
     });
     return sharedInstance;
-
 }
 
 - (instancetype)init
@@ -49,24 +48,26 @@
         [self.manager requestWhenInUseAuthorization];
     } else {
         self.available = YES;
+        //[self.manager startUpdatingLocation];
+        [self.manager startMonitoringSignificantLocationChanges];
         [self updateLocation];
     }
 }
 
 -(void)updateLocation {
     self.location = self.manager.location;
-    NSLog(@"%@", self.location);
 }
 
 -(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
     if (status == kCLAuthorizationStatusAuthorizedWhenInUse) {
         self.available = YES;
+        //[self.manager startUpdatingLocation];
         [self.manager startMonitoringSignificantLocationChanges];
         [self updateLocation];
     }
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    NSLog(@"updated locations");
+    //self.location = [locations lastObject];
 }
 @end

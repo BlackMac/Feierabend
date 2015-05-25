@@ -28,32 +28,35 @@
     self.elapsed = 0;
     shapeLayer = [[CAShapeLayer alloc] init];
     emptyLayer = [[CAShapeLayer alloc] init];
-    [self.layer addSublayer:shapeLayer];
+    self.circleBackgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.1];
+    self.circleProgressColor = [UIColor colorWithRed:0.14 green:0.5 blue:0.67 alpha:1];
+    self.lineWidth = 2.0;
     [self.layer addSublayer:emptyLayer];
+    [self.layer addSublayer:shapeLayer];
+
 }
 
 - (void)drawRect:(CGRect)rect {
     CGPoint center = CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect));
     UIBezierPath *circlePath = [UIBezierPath bezierPathWithArcCenter:center
-                                                              radius:CGRectGetMidX(rect)-40
+                                                              radius:CGRectGetMidX(rect)-CGRectGetMidX(rect)/5
                                                           startAngle:-0.5*M_PI
                                                             endAngle:1.5*M_PI
                                                            clockwise:true];
     shapeLayer.path = circlePath.CGPath;
-    shapeLayer.strokeColor = [[UIColor colorWithRed:0.14 green:0.5 blue:0.67 alpha:1] CGColor];
+    shapeLayer.strokeColor = [self.circleProgressColor CGColor];
     shapeLayer.fillColor = [[UIColor clearColor] CGColor];
-    shapeLayer.lineWidth = 2.0;
+    shapeLayer.lineWidth = self.lineWidth;
     shapeLayer.strokeStart = 0;
+    shapeLayer.lineCap = kCALineCapRound;
     shapeLayer.strokeEnd = self.elapsed;
     
     emptyLayer.path = circlePath.CGPath;
-    emptyLayer.strokeColor = [[UIColor colorWithRed:0 green:0 blue:0 alpha:0.1] CGColor];
+    emptyLayer.strokeColor = [self.circleBackgroundColor CGColor];
     emptyLayer.fillColor = [[UIColor clearColor] CGColor];
-    emptyLayer.lineWidth = 2.0;
+    emptyLayer.lineWidth = self.lineWidth;
     emptyLayer.strokeStart = self.elapsed;
     emptyLayer.strokeEnd = 1;
-    
-
 }
 
 

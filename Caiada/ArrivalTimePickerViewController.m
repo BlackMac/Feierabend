@@ -26,9 +26,8 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    NSDate *arrival = (NSDate *)[[NSUserDefaults standardUserDefaults] valueForKey:@"Arrival"];
+    NSDate *arrival = [SLHArrivalTimeManager sharedArrivalTimeManager].arrivalDate;
     self.arrivalTimeDatePicker.date = arrival;
-    self.scheduledWorkingMinutes.text = [[NSString alloc] initWithFormat:@"%i", (int)[SLHArrivalTimeManager sharedArrivalTimeManager].requiredWorkingTime/60];
 }
 
 /*
@@ -47,13 +46,11 @@
 
 - (IBAction)pickArrivalTimeNow:(id)sender {
     [SLHArrivalTimeManager sharedArrivalTimeManager].arrivalDate = [[NSDate alloc] init];
-    [SLHArrivalTimeManager sharedArrivalTimeManager].requiredWorkingTime = [self.scheduledWorkingMinutes.text doubleValue]*60;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)pickArrivalTimeUserProvided:(id)sender {
     [SLHArrivalTimeManager sharedArrivalTimeManager].arrivalDate =  [self.arrivalTimeDatePicker date];
-    [SLHArrivalTimeManager sharedArrivalTimeManager].requiredWorkingTime = [self.scheduledWorkingMinutes.text doubleValue]*60;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

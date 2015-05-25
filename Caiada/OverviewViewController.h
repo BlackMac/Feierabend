@@ -10,7 +10,7 @@
 #import "SLHCaiadaView.h"
 #import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController <CLLocationManagerDelegate>
+@interface OverviewViewController : UIViewController <CLLocationManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *temperatureDisplay;
 @property (weak, nonatomic) IBOutlet UILabel *weatherConditionDisplay;

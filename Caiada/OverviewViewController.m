@@ -6,16 +6,16 @@
 //  Copyright (c) 2015 Stefan Lange-Hegermann. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "OverviewViewController.h"
 #import "SLHArrivalTimeManager.h"
 #import "SLHLocationManager.h"
 #import "CZWeatherKit.h"
 
-@interface ViewController ()
+@interface OverviewViewController ()
 
 @end
 
-@implementation ViewController
+@implementation OverviewViewController
 
 - (void)viewDidLoad {
     [self updateTimeData];
@@ -97,7 +97,7 @@
     NSString *formattedLeavingTime = [timeFormatter stringFromDate:leavingDate];
     NSString *leavingTimeInfo = [NSString stringWithFormat:@"bis zum Feierabend um %@ Uhr", formattedLeavingTime];
     [self.currentLeavingTime setText:leavingTimeInfo];
-    
+    //TODO: replace with getElapsed
     NSTimeInterval diff = [leavingDate timeIntervalSinceNow];
     self.currentProgressView.elapsed = 1-diff/[SLHArrivalTimeManager sharedArrivalTimeManager].requiredWorkingTime;
     int hours=diff/60/60;

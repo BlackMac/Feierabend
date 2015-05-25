@@ -11,5 +11,7 @@
 @interface SLHCaiadaView : UIView
 
 @property (nonatomic) double elapsed;
-
+@property (nonatomic) UIColor *circleBackgroundColor;
+@property (nonatomic) UIColor *circleProgressColor;
+@property (nonatomic) CGFloat lineWidth;
 @end

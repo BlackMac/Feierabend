@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F81D85031B1366DD006F2F36 /* settings-100.png in Resources */ = {isa = PBXBuildFile; fileRef = F81D85021B1366DD006F2F36 /* settings-100.png */; };
+		F81D85061B137D9F006F2F36 /* TimePickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F81D85051B137D9F006F2F36 /* TimePickerTableViewCell.m */; };
+		F81D85091B13A61E006F2F36 /* LocationSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81D85081B13A61E006F2F36 /* LocationSearchTableViewController.m */; };
+		F81D850B1B13AADD006F2F36 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = F81D850A1B13AADD006F2F36 /* location.png */; };
+		F81D850D1B13AC85006F2F36 /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F81D850C1B13AC85006F2F36 /* location@2x.png */; };
 		F84211791AF96D2D0018F120 /* ArrivalTimePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F84211741AF96D2D0018F120 /* ArrivalTimePickerViewController.m */; };
 		F842117A1AF96D2D0018F120 /* SLHArrivalTimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F84211761AF96D2D0018F120 /* SLHArrivalTimeManager.m */; };
 		F842117B1AF96D2D0018F120 /* SLHCaiadaView.m in Sources */ = {isa = PBXBuildFile; fileRef = F84211781AF96D2D0018F120 /* SLHCaiadaView.m */; };
@@ -25,9 +30,22 @@
 		F843A0AB1AFA925200183FC9 /* Climacons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F843A0AA1AFA925200183FC9 /* Climacons.ttf */; };
 		F843A0AD1AFA9A7600183FC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F843A0AC1AFA9A7600183FC9 /* CoreLocation.framework */; };
 		F843A0B01AFAA24C00183FC9 /* SLHLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F843A0AF1AFAA24C00183FC9 /* SLHLocationManager.m */; };
+		F8463BB81B0D22BC0031F292 /* SLHArrivalTimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F84211761AF96D2D0018F120 /* SLHArrivalTimeManager.m */; };
+		F84795EA1B0BE53800D421E9 /* sleep.png in Resources */ = {isa = PBXBuildFile; fileRef = F84795E91B0BE53800D421E9 /* sleep.png */; };
+		F84795EB1B0BE53800D421E9 /* sleep.png in Resources */ = {isa = PBXBuildFile; fileRef = F84795E91B0BE53800D421E9 /* sleep.png */; };
+		F849411B1B11E00800EBE2C6 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F849411A1B11E00800EBE2C6 /* SettingsTableViewController.m */; };
+		F8537E2C1B0BC68A008963A6 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8537E2B1B0BC68A008963A6 /* InterfaceController.m */; };
+		F8537E2F1B0BC68A008963A6 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8537E2E1B0BC68A008963A6 /* NotificationController.m */; };
+		F8537E321B0BC68A008963A6 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8537E311B0BC68A008963A6 /* GlanceController.m */; };
+		F8537E341B0BC68A008963A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8537E331B0BC68A008963A6 /* Images.xcassets */; };
+		F8537E381B0BC68A008963A6 /* Feierabend WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = F8537E371B0BC68A008963A6 /* Feierabend WatchKit App.app */; };
+		F8537E401B0BC68A008963A6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8537E3E1B0BC68A008963A6 /* Interface.storyboard */; };
+		F8537E421B0BC68A008963A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8537E411B0BC68A008963A6 /* Images.xcassets */; };
+		F8537E451B0BC68A008963A6 /* Feierabend WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F8537E251B0BC68A008963A6 /* Feierabend WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F8537E531B0BCB54008963A6 /* SLHCaiadaView.m in Sources */ = {isa = PBXBuildFile; fileRef = F84211781AF96D2D0018F120 /* SLHCaiadaView.m */; };
 		F8B843601AF3A92A0006CCB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B8435F1AF3A92A0006CCB8 /* main.m */; };
 		F8B843631AF3A92A0006CCB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B843621AF3A92A0006CCB8 /* AppDelegate.m */; };
-		F8B843661AF3A92A0006CCB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B843651AF3A92A0006CCB8 /* ViewController.m */; };
+		F8B843661AF3A92A0006CCB8 /* OverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B843651AF3A92A0006CCB8 /* OverviewViewController.m */; };
 		F8B843691AF3A92A0006CCB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B843671AF3A92A0006CCB8 /* Main.storyboard */; };
 		F8B8436B1AF3A92A0006CCB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B8436A1AF3A92A0006CCB8 /* Images.xcassets */; };
 		F8B8436E1AF3A92A0006CCB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B8436C1AF3A92A0006CCB8 /* LaunchScreen.xib */; };
@@ -35,6 +53,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F8537E391B0BC68A008963A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8B843521AF3A92A0006CCB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8537E361B0BC68A008963A6;
+			remoteInfo = "Feierabend WatchKit App";
+		};
+		F8537E431B0BC68A008963A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8B843521AF3A92A0006CCB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8537E241B0BC68A008963A6;
+			remoteInfo = "Feierabend WatchKit Extension";
+		};
 		F8B843741AF3A92A0006CCB8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F8B843521AF3A92A0006CCB8 /* Project object */;
@@ -44,7 +76,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F8537E4C1B0BC68A008963A6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F8537E451B0BC68A008963A6 /* Feierabend WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F81D85021B1366DD006F2F36 /* settings-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-100.png"; sourceTree = "<group>"; };
+		F81D85041B137D9F006F2F36 /* TimePickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimePickerTableViewCell.h; sourceTree = "<group>"; };
+		F81D85051B137D9F006F2F36 /* TimePickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimePickerTableViewCell.m; sourceTree = "<group>"; };
+		F81D85071B13A61E006F2F36 /* LocationSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationSearchTableViewController.h; sourceTree = "<group>"; };
+		F81D85081B13A61E006F2F36 /* LocationSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationSearchTableViewController.m; sourceTree = "<group>"; };
+		F81D850A1B13AADD006F2F36 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		F81D850C1B13AC85006F2F36 /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@2x.png"; sourceTree = "<group>"; };
 		F84211731AF96D2D0018F120 /* ArrivalTimePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrivalTimePickerViewController.h; sourceTree = "<group>"; };
 		F84211741AF96D2D0018F120 /* ArrivalTimePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrivalTimePickerViewController.m; sourceTree = "<group>"; };
 		F84211751AF96D2D0018F120 /* SLHArrivalTimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLHArrivalTimeManager.h; sourceTree = "<group>"; };
@@ -80,13 +133,32 @@
 		F843A0AC1AFA9A7600183FC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F843A0AE1AFAA24C00183FC9 /* SLHLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLHLocationManager.h; sourceTree = "<group>"; };
 		F843A0AF1AFAA24C00183FC9 /* SLHLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLHLocationManager.m; sourceTree = "<group>"; };
+		F8463BB71B0D21880031F292 /* Feierabend WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Feierabend WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		F8463BB91B0D23B40031F292 /* Feierabend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Feierabend.entitlements; sourceTree = "<group>"; };
+		F84795E91B0BE53800D421E9 /* sleep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sleep.png; sourceTree = "<group>"; };
+		F84941191B11E00800EBE2C6 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		F849411A1B11E00800EBE2C6 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		F8537E251B0BC68A008963A6 /* Feierabend WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Feierabend WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8537E281B0BC68A008963A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8537E291B0BC68A008963A6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F8537E2A1B0BC68A008963A6 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		F8537E2B1B0BC68A008963A6 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		F8537E2D1B0BC68A008963A6 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		F8537E2E1B0BC68A008963A6 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		F8537E301B0BC68A008963A6 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		F8537E311B0BC68A008963A6 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		F8537E331B0BC68A008963A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F8537E371B0BC68A008963A6 /* Feierabend WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Feierabend WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8537E3D1B0BC68A008963A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8537E3F1B0BC68A008963A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F8537E411B0BC68A008963A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F8B8435A1AF3A92A0006CCB8 /* Feierabend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feierabend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B8435E1AF3A92A0006CCB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8B8435F1AF3A92A0006CCB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8B843611AF3A92A0006CCB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8B843621AF3A92A0006CCB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F8B843641AF3A92A0006CCB8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F8B843651AF3A92A0006CCB8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F8B843641AF3A92A0006CCB8 /* OverviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverviewViewController.h; sourceTree = "<group>"; };
+		F8B843651AF3A92A0006CCB8 /* OverviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverviewViewController.m; sourceTree = "<group>"; };
 		F8B843681AF3A92A0006CCB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8B8436A1AF3A92A0006CCB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F8B8436D1AF3A92A0006CCB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -96,6 +168,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F8537E221B0BC68A008963A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8B843571AF3A92A0006CCB8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -174,12 +253,88 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		F84941171B11DF1400EBE2C6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F8B843641AF3A92A0006CCB8 /* OverviewViewController.h */,
+				F8B843651AF3A92A0006CCB8 /* OverviewViewController.m */,
+				F84211731AF96D2D0018F120 /* ArrivalTimePickerViewController.h */,
+				F84211741AF96D2D0018F120 /* ArrivalTimePickerViewController.m */,
+				F84211771AF96D2D0018F120 /* SLHCaiadaView.h */,
+				F84211781AF96D2D0018F120 /* SLHCaiadaView.m */,
+				F84941191B11E00800EBE2C6 /* SettingsTableViewController.h */,
+				F849411A1B11E00800EBE2C6 /* SettingsTableViewController.m */,
+				F81D85041B137D9F006F2F36 /* TimePickerTableViewCell.h */,
+				F81D85051B137D9F006F2F36 /* TimePickerTableViewCell.m */,
+				F81D85071B13A61E006F2F36 /* LocationSearchTableViewController.h */,
+				F81D85081B13A61E006F2F36 /* LocationSearchTableViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		F84941181B11DF1C00EBE2C6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F84211751AF96D2D0018F120 /* SLHArrivalTimeManager.h */,
+				F84211761AF96D2D0018F120 /* SLHArrivalTimeManager.m */,
+				F843A0AE1AFAA24C00183FC9 /* SLHLocationManager.h */,
+				F843A0AF1AFAA24C00183FC9 /* SLHLocationManager.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		F8537E261B0BC68A008963A6 /* Feierabend WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F8463BB71B0D21880031F292 /* Feierabend WatchKit Extension.entitlements */,
+				F8537E2A1B0BC68A008963A6 /* InterfaceController.h */,
+				F8537E2B1B0BC68A008963A6 /* InterfaceController.m */,
+				F8537E2D1B0BC68A008963A6 /* NotificationController.h */,
+				F8537E2E1B0BC68A008963A6 /* NotificationController.m */,
+				F8537E301B0BC68A008963A6 /* GlanceController.h */,
+				F8537E311B0BC68A008963A6 /* GlanceController.m */,
+				F8537E331B0BC68A008963A6 /* Images.xcassets */,
+				F8537E271B0BC68A008963A6 /* Supporting Files */,
+			);
+			path = "Feierabend WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F8537E271B0BC68A008963A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F84795E91B0BE53800D421E9 /* sleep.png */,
+				F8537E281B0BC68A008963A6 /* Info.plist */,
+				F8537E291B0BC68A008963A6 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8537E3B1B0BC68A008963A6 /* Feierabend WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F8537E3E1B0BC68A008963A6 /* Interface.storyboard */,
+				F8537E411B0BC68A008963A6 /* Images.xcassets */,
+				F8537E3C1B0BC68A008963A6 /* Supporting Files */,
+			);
+			path = "Feierabend WatchKit App";
+			sourceTree = "<group>";
+		};
+		F8537E3C1B0BC68A008963A6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8537E3D1B0BC68A008963A6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F8B843511AF3A92A0006CCB8 = {
 			isa = PBXGroup;
 			children = (
 				F843A0AC1AFA9A7600183FC9 /* CoreLocation.framework */,
 				F8B8435C1AF3A92A0006CCB8 /* Caiada */,
 				F8B843761AF3A92A0006CCB8 /* CaiadaTests */,
+				F8537E261B0BC68A008963A6 /* Feierabend WatchKit Extension */,
+				F8537E3B1B0BC68A008963A6 /* Feierabend WatchKit App */,
 				F8B8435B1AF3A92A0006CCB8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -189,6 +344,8 @@
 			children = (
 				F8B8435A1AF3A92A0006CCB8 /* Feierabend.app */,
 				F8B843731AF3A92A0006CCB8 /* CaiadaTests.xctest */,
+				F8537E251B0BC68A008963A6 /* Feierabend WatchKit Extension.appex */,
+				F8537E371B0BC68A008963A6 /* Feierabend WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,18 +353,11 @@
 		F8B8435C1AF3A92A0006CCB8 /* Caiada */ = {
 			isa = PBXGroup;
 			children = (
-				F84211731AF96D2D0018F120 /* ArrivalTimePickerViewController.h */,
-				F84211741AF96D2D0018F120 /* ArrivalTimePickerViewController.m */,
-				F84211751AF96D2D0018F120 /* SLHArrivalTimeManager.h */,
-				F84211761AF96D2D0018F120 /* SLHArrivalTimeManager.m */,
-				F84211771AF96D2D0018F120 /* SLHCaiadaView.h */,
-				F84211781AF96D2D0018F120 /* SLHCaiadaView.m */,
-				F843A0AE1AFAA24C00183FC9 /* SLHLocationManager.h */,
-				F843A0AF1AFAA24C00183FC9 /* SLHLocationManager.m */,
 				F8B843611AF3A92A0006CCB8 /* AppDelegate.h */,
 				F8B843621AF3A92A0006CCB8 /* AppDelegate.m */,
-				F8B843641AF3A92A0006CCB8 /* ViewController.h */,
-				F8B843651AF3A92A0006CCB8 /* ViewController.m */,
+				F84941181B11DF1C00EBE2C6 /* Core */,
+				F84941171B11DF1400EBE2C6 /* UI */,
+				F8463BB91B0D23B40031F292 /* Feierabend.entitlements */,
 				F8B843671AF3A92A0006CCB8 /* Main.storyboard */,
 				F8B8436A1AF3A92A0006CCB8 /* Images.xcassets */,
 				F8B8436C1AF3A92A0006CCB8 /* LaunchScreen.xib */,
@@ -220,6 +370,9 @@
 		F8B8435D1AF3A92A0006CCB8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F81D850A1B13AADD006F2F36 /* location.png */,
+				F81D850C1B13AC85006F2F36 /* location@2x.png */,
+				F81D85021B1366DD006F2F36 /* settings-100.png */,
 				F843A0AA1AFA925200183FC9 /* Climacons.ttf */,
 				F843A0841AFA897600183FC9 /* arrive.png */,
 				F843A0851AFA897600183FC9 /* arrive@2x.png */,
@@ -251,6 +404,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F8537E241B0BC68A008963A6 /* Feierabend WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8537E4B1B0BC68A008963A6 /* Build configuration list for PBXNativeTarget "Feierabend WatchKit Extension" */;
+			buildPhases = (
+				F8537E211B0BC68A008963A6 /* Sources */,
+				F8537E221B0BC68A008963A6 /* Frameworks */,
+				F8537E231B0BC68A008963A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8537E3A1B0BC68A008963A6 /* PBXTargetDependency */,
+			);
+			name = "Feierabend WatchKit Extension";
+			productName = "Feierabend WatchKit Extension";
+			productReference = F8537E251B0BC68A008963A6 /* Feierabend WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		F8537E361B0BC68A008963A6 /* Feierabend WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8537E4A1B0BC68A008963A6 /* Build configuration list for PBXNativeTarget "Feierabend WatchKit App" */;
+			buildPhases = (
+				F8537E351B0BC68A008963A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Feierabend WatchKit App";
+			productName = "Feierabend WatchKit App";
+			productReference = F8537E371B0BC68A008963A6 /* Feierabend WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		F8B843591AF3A92A0006CCB8 /* Caiada */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8B8437D1AF3A92A0006CCB8 /* Build configuration list for PBXNativeTarget "Caiada" */;
@@ -258,10 +444,12 @@
 				F8B843561AF3A92A0006CCB8 /* Sources */,
 				F8B843571AF3A92A0006CCB8 /* Frameworks */,
 				F8B843581AF3A92A0006CCB8 /* Resources */,
+				F8537E4C1B0BC68A008963A6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F8537E441B0BC68A008963A6 /* PBXTargetDependency */,
 			);
 			name = Caiada;
 			productName = Caiada;
@@ -295,10 +483,26 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Stefan Lange-Hegermann";
 				TargetAttributes = {
+					F8537E241B0BC68A008963A6 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RE4FXQ754N;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					F8537E361B0BC68A008963A6 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RE4FXQ754N;
+					};
 					F8B843591AF3A92A0006CCB8 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = RE4FXQ754N;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
@@ -325,21 +529,46 @@
 			targets = (
 				F8B843591AF3A92A0006CCB8 /* Caiada */,
 				F8B843721AF3A92A0006CCB8 /* CaiadaTests */,
+				F8537E241B0BC68A008963A6 /* Feierabend WatchKit Extension */,
+				F8537E361B0BC68A008963A6 /* Feierabend WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F8537E231B0BC68A008963A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8537E341B0BC68A008963A6 /* Images.xcassets in Resources */,
+				F84795EA1B0BE53800D421E9 /* sleep.png in Resources */,
+				F8537E381B0BC68A008963A6 /* Feierabend WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8537E351B0BC68A008963A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8537E401B0BC68A008963A6 /* Interface.storyboard in Resources */,
+				F84795EB1B0BE53800D421E9 /* sleep.png in Resources */,
+				F8537E421B0BC68A008963A6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8B843581AF3A92A0006CCB8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F843A0871AFA897600183FC9 /* arrive@2x.png in Resources */,
 				F843A0861AFA897600183FC9 /* arrive.png in Resources */,
+				F81D850B1B13AADD006F2F36 /* location.png in Resources */,
 				F843A0AB1AFA925200183FC9 /* Climacons.ttf in Resources */,
+				F81D850D1B13AC85006F2F36 /* location@2x.png in Resources */,
 				F84211B41AF96EE80018F120 /* bgimage.png in Resources */,
 				F8B843691AF3A92A0006CCB8 /* Main.storyboard in Resources */,
 				F8B8436E1AF3A92A0006CCB8 /* LaunchScreen.xib in Resources */,
+				F81D85031B1366DD006F2F36 /* settings-100.png in Resources */,
 				F8B8436B1AF3A92A0006CCB8 /* Images.xcassets in Resources */,
 				F842117D1AF96D4F0018F120 /* horn.wav in Resources */,
 			);
@@ -355,13 +584,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F8537E211B0BC68A008963A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8537E2F1B0BC68A008963A6 /* NotificationController.m in Sources */,
+				F8463BB81B0D22BC0031F292 /* SLHArrivalTimeManager.m in Sources */,
+				F8537E2C1B0BC68A008963A6 /* InterfaceController.m in Sources */,
+				F8537E321B0BC68A008963A6 /* GlanceController.m in Sources */,
+				F8537E531B0BCB54008963A6 /* SLHCaiadaView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8B843561AF3A92A0006CCB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81D85091B13A61E006F2F36 /* LocationSearchTableViewController.m in Sources */,
+				F849411B1B11E00800EBE2C6 /* SettingsTableViewController.m in Sources */,
 				F843A0B01AFAA24C00183FC9 /* SLHLocationManager.m in Sources */,
 				F843A0A41AFA8C9A00183FC9 /* CZWeatherLocation.m in Sources */,
-				F8B843661AF3A92A0006CCB8 /* ViewController.m in Sources */,
+				F8B843661AF3A92A0006CCB8 /* OverviewViewController.m in Sources */,
 				F842117A1AF96D2D0018F120 /* SLHArrivalTimeManager.m in Sources */,
 				F8B843631AF3A92A0006CCB8 /* AppDelegate.m in Sources */,
 				F843A0A91AFA8C9A00183FC9 /* CZWundergroundService.m in Sources */,
@@ -373,6 +616,7 @@
 				F842117B1AF96D2D0018F120 /* SLHCaiadaView.m in Sources */,
 				F843A0A61AFA8C9A00183FC9 /* CZForecastioService.m in Sources */,
 				F843A0A21AFA8C9A00183FC9 /* CZWeatherCondition.m in Sources */,
+				F81D85061B137D9F006F2F36 /* TimePickerTableViewCell.m in Sources */,
 				F843A0A51AFA8C9A00183FC9 /* CZWeatherRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +632,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F8537E3A1B0BC68A008963A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8537E361B0BC68A008963A6 /* Feierabend WatchKit App */;
+			targetProxy = F8537E391B0BC68A008963A6 /* PBXContainerItemProxy */;
+		};
+		F8537E441B0BC68A008963A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8537E241B0BC68A008963A6 /* Feierabend WatchKit Extension */;
+			targetProxy = F8537E431B0BC68A008963A6 /* PBXContainerItemProxy */;
+		};
 		F8B843751AF3A92A0006CCB8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F8B843591AF3A92A0006CCB8 /* Caiada */;
@@ -396,6 +650,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F8537E3E1B0BC68A008963A6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8537E3F1B0BC68A008963A6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		F8B843671AF3A92A0006CCB8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -415,6 +677,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F8537E461B0BC68A008963A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Feierabend WatchKit Extension/Feierabend WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Feierabend WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_CFLAGS = "-DAPP_EXTENSION";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F8537E471B0BC68A008963A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Feierabend WatchKit Extension/Feierabend WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Feierabend WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_CFLAGS = "-DAPP_EXTENSION";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F8537E481B0BC68A008963A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Feierabend_WatchKit_Extension;
+				INFOPLIST_FILE = "Feierabend WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		F8537E491B0BC68A008963A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = Feierabend_WatchKit_Extension;
+				INFOPLIST_FILE = "Feierabend WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		F8B8437B1AF3A92A0006CCB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -499,11 +829,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Caiada/Feierabend.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Caiada/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Feierabend;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -512,11 +845,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Caiada/Feierabend.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Caiada/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Feierabend;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -558,6 +894,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F8537E4A1B0BC68A008963A6 /* Build configuration list for PBXNativeTarget "Feierabend WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8537E481B0BC68A008963A6 /* Debug */,
+				F8537E491B0BC68A008963A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8537E4B1B0BC68A008963A6 /* Build configuration list for PBXNativeTarget "Feierabend WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8537E461B0BC68A008963A6 /* Debug */,
+				F8537E471B0BC68A008963A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F8B843551AF3A92A0006CCB8 /* Build configuration list for PBXProject "Caiada" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
