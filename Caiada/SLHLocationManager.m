@@ -10,6 +10,7 @@
 
 @interface SLHLocationManager()
 @property (nonatomic, strong) CLLocationManager *manager;
+@property (nonatomic) CLRegion *monitoredRegion;
 @end
 
 @implementation SLHLocationManager
@@ -45,7 +46,7 @@
     self.manager.delegate = self;
     
     if (status == kCLAuthorizationStatusNotDetermined) {
-        [self.manager requestWhenInUseAuthorization];
+        [self.manager requestAlwaysAuthorization];
     } else {
         self.available = YES;
         //[self.manager startUpdatingLocation];
@@ -67,7 +68,21 @@
     }
 }
 
+-(void)monitorOfficeEntry:(CLLocation *) location {
+    if (self.monitoredRegion != nil) {
+        [self.manager stopMonitoringForRegion:self.monitoredRegion];
+    }
+    self.monitoredRegion = [[CLCircularRegion alloc] initWithCenter:location.coordinate radius:50 identifier:@"OfficeRegion"];
+    [self.manager startMonitoringForRegion:self.monitoredRegion];
+     
+}
+
+-(void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
+    [[NSNotificationCenter defaultCenter] postNotificationName:SLHLocationOfficeEnteredNotification object:nil];
+}
+
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    NSLog(@"Location updated");
     //self.location = [locations lastObject];
 }
 @end

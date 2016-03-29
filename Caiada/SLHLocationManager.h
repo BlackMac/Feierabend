@@ -9,12 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
+#define SLHLocationOfficeEnteredNotification @"SLHLocationOfficeEnteredNotification"
+
+
 @interface SLHLocationManager : NSObject <CLLocationManagerDelegate>
 @property (nonatomic) CLLocation *location;
 @property (nonatomic) BOOL available;
 @property (nonatomic) NSString *address;
 + (SLHLocationManager *)sharedLocationManager;
-
+-(void)monitorOfficeEntry:(CLLocation *) location;
 -(void)updateLocation;
 @end
 

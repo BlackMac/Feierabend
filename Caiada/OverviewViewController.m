@@ -9,6 +9,7 @@
 #import "OverviewViewController.h"
 #import "SLHArrivalTimeManager.h"
 #import "SLHLocationManager.h"
+#import "SLHBackgroundLayer.h"
 #import "CZWeatherKit.h"
 
 @interface OverviewViewController ()
@@ -30,7 +31,9 @@
                                              selector:@selector(timeManagerUpdated:)
                                                  name:SLHArrivalTimeUpdatedNotification
                                                object:nil];
-    
+    CAGradientLayer *bgLayer = [SLHBackgroundLayer greyGradient];
+    bgLayer.frame = self.view.bounds;
+    [self.view.layer insertSublayer:bgLayer atIndex:0];
     [self updateWeatherData];
     [super viewDidLoad];
 }

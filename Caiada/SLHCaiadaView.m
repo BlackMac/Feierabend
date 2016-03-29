@@ -24,10 +24,13 @@
 }
 
 - (void)awakeFromNib {
-    self.clearsContextBeforeDrawing = NO;
+    self.clearsContextBeforeDrawing = YES;
     self.elapsed = 0;
     shapeLayer = [[CAShapeLayer alloc] init];
     emptyLayer = [[CAShapeLayer alloc] init];
+    self.backgroundColor = [UIColor clearColor];
+    shapeLayer.backgroundColor = (__bridge CGColorRef)([UIColor redColor]);
+    emptyLayer.backgroundColor = (__bridge CGColorRef)([UIColor redColor]);
     self.circleBackgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.1];
     self.circleProgressColor = [UIColor colorWithRed:0.14 green:0.5 blue:0.67 alpha:1];
     self.lineWidth = 2.0;
@@ -59,5 +62,15 @@
     emptyLayer.strokeEnd = 1;
 }
 
-
+-(UIImage *)image {
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, 0.0);
+    [[UIColor clearColor] setFill];
+    UIRectFill(self.bounds);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:NO];
+    UIImage *capturedImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    return capturedImage;
+}
 @end

@@ -53,7 +53,12 @@ static NSString * const serviceName = @"Open Weather Map";
 
 - (instancetype)init
 {
-    return [self initWithKey:nil];
+    if (self = [super init]) {
+        _key = nil;
+        _serviceName = serviceName;
+    }
+    return self;
+
 }
 
 - (instancetype)initWithKey:(NSString *)key

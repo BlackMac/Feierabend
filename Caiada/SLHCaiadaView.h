@@ -14,4 +14,5 @@
 @property (nonatomic) UIColor *circleBackgroundColor;
 @property (nonatomic) UIColor *circleProgressColor;
 @property (nonatomic) CGFloat lineWidth;
+@property (nonatomic, readonly) UIImage *image;
 @end
